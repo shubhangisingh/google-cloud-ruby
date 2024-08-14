@@ -90,6 +90,7 @@ module Google
                                                 multiplier: multiplier,
                                                 upload_chunk_size: upload_chunk_size
     end
+    #my_custom_method = gcloud.my_custom_method
 
     def my_custom_method
       puts 'Custom method is called'
@@ -163,6 +164,10 @@ module Google
                                  max_interval: max_interval,
                                  multiplier: multiplier,
                                  upload_chunk_size: upload_chunk_size
+    end
+
+    def self.my_custom_method
+      puts 'Calling'
     end
   end
 end
