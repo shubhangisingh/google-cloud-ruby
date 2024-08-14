@@ -78,6 +78,7 @@ module Google
     #
     def storage scope: nil, retries: nil, timeout: nil, open_timeout: nil, read_timeout: nil, send_timeout: nil,
                 max_elapsed_time: nil, base_interval: nil, max_interval: nil, multiplier: nil, upload_chunk_size: nil
+                puts 'Calling storage 2'
       Google::Cloud.storage @project, @keyfile, scope: scope,
                                                 retries: (retries || @retries),
                                                 timeout: (timeout || @timeout),
@@ -151,6 +152,7 @@ module Google
                      max_elapsed_time: nil, base_interval: nil, max_interval: nil, multiplier: nil,
                      upload_chunk_size: nil
       require "google/cloud/storage"
+      puts 'Calling storage 1'
       Google::Cloud::Storage.new project_id: project_id,
                                  credentials: credentials,
                                  scope: scope,
