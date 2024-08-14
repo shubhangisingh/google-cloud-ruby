@@ -91,6 +91,12 @@ module Google
                                                 upload_chunk_size: upload_chunk_size
     end
 
+    def my_custom_method
+      puts 'Custom method is called'
+    end
+
+  
+
     ##
     # Creates a new object for connecting to the Storage service.
     # Each call creates a new connection.
